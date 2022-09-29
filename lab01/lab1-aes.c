@@ -2,7 +2,7 @@
 #include "unistd.h"
 #include <string.h>
 #include <stdlib.h>
-#include <windows.h>
+// #include <windows.h>
 
 
 #define MAXLEN 1024
@@ -699,7 +699,7 @@ int main(int argc, char const *argv[])
 
     int cos=0;
 
-    SetConsoleOutputCP(65001);
+    // SetConsoleOutputCP(65001);
     printf("************************$声明信息$****************************\n");
     printf("版权声明：未经授权，禁止传播、使用和用于商业用途\n");
     printf("使用说明：本程序是AES密码演示程序。\n");
@@ -735,7 +735,8 @@ int main(int argc, char const *argv[])
     {
         return 0;
     }
-    system("pause");
+    // system("pause"); // windows用
+    pause(); //linux用
 
     return 0;
 }
